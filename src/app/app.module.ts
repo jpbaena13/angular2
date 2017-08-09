@@ -10,11 +10,13 @@ import { HeroDetailComponent }  from './hero-detail.component';
 import { HeroComponent }        from './hero.component';
 import { DashboardComponent }   from './dashboard.component';
 import { HeroService }          from './hero.service';
+import { LifeCycleComponent }   from './lifecycle.component';
 
 
 @NgModule({
     declarations: [
         AppComponent,
+        LifeCycleComponent,
         HeroDetailComponent,
         HeroComponent,
         DashboardComponent
@@ -26,7 +28,8 @@ import { HeroService }          from './hero.service';
         AppRoutingModule
     ],
     providers: [HeroService],
-    bootstrap: [AppComponent]
+    bootstrap: [LifeCycleComponent]
+    // bootstrap: [AppComponent]
 })
 
 export class AppModule {}
